@@ -1,0 +1,36 @@
+{
+  "name": "steal-generators-example",
+  "version": "0.0.1",
+  "description": "Example StealJS app using generator functions",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "build": "rm -rf dist && steal-tools build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-mujica/steal-generators-example.git"
+  },
+  "author": "Bitovi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-mujica/steal-generators-example/issues"
+  },
+  "homepage": "https://github.com/m-mujica/steal-generators-example#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "http-server": "^0.9.0",
+    "steal": "^1.3.2",
+    "steal-tools": "^1.2.0"
+  },
+  "steal": {
+    "map": {
+      "babel-polyfill": "babel-polyfill/dist/polyfill"
+    },
+    "meta": {
+      "babel-polyfill/dist/polyfill": {
+        "format": "cjs"
+      }
+    }
+  }
+}
